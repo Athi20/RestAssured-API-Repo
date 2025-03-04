@@ -1,0 +1,21 @@
+package Practice7;
+/*
+ * different typesof authentications in Rest Assured:
+ * 1.BAsic
+ * 2.Digest
+ * 3.Preemptive
+ * 4.Oauth1.0,2.0
+ * 5.Bearer Token
+ * 6.API key
+ */
+public class Authentications {
+	
+	void TestAuth() {
+		given
+		
+		.when()
+		
+		.then()
+	}
+
+}

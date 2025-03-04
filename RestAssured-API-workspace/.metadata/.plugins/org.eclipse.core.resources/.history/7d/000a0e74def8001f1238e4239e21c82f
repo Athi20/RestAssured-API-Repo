@@ -1,0 +1,8 @@
+{
+id	integer($int32)
+idBook	integer($int32)
+firstName	string
+nullable: true
+lastName	string
+nullable: true
+}

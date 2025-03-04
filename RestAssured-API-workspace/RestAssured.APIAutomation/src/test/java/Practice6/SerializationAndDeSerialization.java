@@ -1,0 +1,61 @@
+package Practice6;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+/*
+ * pojo-->json (Seriliazation)
+ * json-->pojo(Deserilization)
+ */
+
+public class SerializationAndDeSerialization {
+	
+	@Test
+	void convertPojo2Json() throws JsonProcessingException {
+		/*Students studentPojo=new Students();
+		
+		studentPojo.setName("Jithin");
+		studentPojo.setLocation("Canada");
+		studentPojo.setPhone("123456");
+		
+		String courseArr[]= {"C++","C"};
+		studentPojo.setCourses(courseArr);
+	
+	//Convert Java object to json object
+		ObjectMapper objMapper=new ObjectMapper();
+		//Convert Java object to json object
+		String jsonData=objMapper.writerWithDefaultPrettyPrinter().writeValueAsString(studentPojo);
+		System.out.println(jsonData);*/
+		
+		
+	}
+	
+	//Deserialization
+	@Test(priority=1)
+	void convertJson2Pojo() throws JsonMappingException, JsonProcessingException {
+		
+		String jsonData="{\r\n"
+				+ "  \"name\" : \"Jithin\",\r\n"
+				+ "  \"location\" : \"Canada\",\r\n"
+				+ "  \"phone\" : \"123456\",\r\n"
+				+ "  \"courses\" : [ \"C++\", \"C\" ]\r\n"
+				+ "}";
+	
+		ObjectMapper objMapper=new ObjectMapper();
+		//Convert json object to java object
+		Students studentobj=objMapper.readValue(jsonData, Students.class);
+		System.out.println(studentobj.getName());
+		System.out.println(studentobj.getPhone());
+		System.out.println(studentobj.getLocation());
+		System.out.println(studentobj.getCourses()[0]);
+		System.out.println(studentobj.getCourses()[1]);
+	}
+	
+
+}

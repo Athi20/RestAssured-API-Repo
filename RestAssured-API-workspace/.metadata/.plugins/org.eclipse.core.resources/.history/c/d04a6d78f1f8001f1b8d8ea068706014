@@ -1,0 +1,15 @@
+package Practice6;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+/*
+ * pojo-->json (Seriliazation)
+ * json-->pojo(Deserilization)
+ */
+
+public class SerializationAndDeSerialization {
+	
+	
+
+}

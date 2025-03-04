@@ -1,0 +1,27 @@
+package Practice5;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+import java.io.File;
+
+public class UploadFile {
+	
+	@Test
+	void testFileUpload() {
+		
+		File myfile=new File(".\\SampleTXT.txt");
+		given()
+			.multiPart("myfile",myfile)		
+		.when()
+		 	.post("https://reqres.in/api/upload")
+		.then()
+			.statusCode(201);
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package Practice4;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+
+public class ParsingJSONResponse {
+	
+	@Test
+	void TestParsingJSON() {
+		
+	Response res=	given()
+		 	.contentType("content-type.json")
+		.when()
+			.get("http://localhost:3000/store");
+	
+	
+	Assert.assertEquals(res.store[1].name, "Phone");
+	}
+
+}

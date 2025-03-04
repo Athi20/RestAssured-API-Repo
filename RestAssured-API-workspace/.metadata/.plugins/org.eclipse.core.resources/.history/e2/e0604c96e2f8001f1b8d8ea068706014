@@ -1,0 +1,7 @@
+{
+id	integer($int32)
+title	string
+nullable: true
+dueDate	string($date-time)
+completed	boolean
+}

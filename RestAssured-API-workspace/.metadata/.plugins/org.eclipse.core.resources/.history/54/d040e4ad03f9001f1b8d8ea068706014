@@ -1,0 +1,21 @@
+package FakerData;
+
+import com.github.javafaker.Faker;
+
+/*
+ * we can use this library for API testing. can generate random data
+ */
+public class FakerDataGeneration {
+	
+	void testGenerateDummyData() {
+		
+		Faker fakerObj=new Faker();
+		
+		String fullName= fakerObj.name().fullName();
+		String firstName=fakerObj.name().firstName();
+		
+		System.out.println(fullName);
+		System.out.println(firstName);
+	}
+
+}

@@ -1,0 +1,114 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "age": 22
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "age": 21
+    },
+    {
+      "id": "d1e7",
+      "courses": [
+        "C++",
+        "C"
+      ],
+      "phone": "123456",
+      "name": "Ameya",
+      "location": "Canada"
+    },
+    {
+      "id": "e655",
+      "courses": [
+        "C++",
+        "C"
+      ],
+      "phone": "123456",
+      "name": "Ameya",
+      "location": "Canada"
+    },
+    {
+      "id": "ae15",
+      "courses": [
+        "C++",
+        "C"
+      ],
+      "phone": "123456",
+      "name": "Ameya",
+      "location": "Canada"
+    },
+    {
+      "id": "313d",
+      "courses": [
+        "C++",
+        "C"
+      ],
+      "phone": "123456",
+      "name": "Ameya",
+      "location": "Canada"
+    },
+    {
+      "id": "d2a4",
+      "courses": [
+        "C++",
+        "C"
+      ],
+      "phone": "123456",
+      "name": "Ameya",
+      "location": "Canada"
+    },
+    {
+      "id": "764b",
+      "name": "Jithin",
+      "location": "Canada",
+      "phone": "123456",
+      "courses": [
+        "C++",
+        "C"
+      ]
+    },
+    {
+      "id": "c73b",
+      "name": "Jithin",
+      "location": "Canada",
+      "phone": "123456",
+      "courses": [
+        "C++",
+        "C"
+      ]
+    },
+    {
+      "id": "52b1",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France"
+    },
+    {
+      "id": "bf29",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France"
+    },
+    {
+      "id": "d2cc",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France"
+    }
+  ]
+}
