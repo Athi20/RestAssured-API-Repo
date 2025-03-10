@@ -2,7 +2,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestRequests.HTTPRequests"/>
+      <class name="APIChaining.CreateUser"/>
+      <class name="APIChaining.GetUser"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
